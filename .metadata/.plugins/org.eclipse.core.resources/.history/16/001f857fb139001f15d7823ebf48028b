@@ -1,0 +1,11 @@
+package com.npruse65.id023;
+
+public class HumanBeing {
+	private double height;
+	private double weight;
+	private double bmi;
+	
+	public  void setHeight(double high) {
+		height = high;
+	}
+}

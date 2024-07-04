@@ -1,0 +1,21 @@
+import com.npruse65.id023.HumanBeing;
+import com.npruse65.id023.BmiIndexer;
+import com.npruse65.id023.HealthAnalyzer;
+
+
+public class TestDrive {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HumanBeing hb1 = new HumanBeing();
+		hb1.setHeight(180);
+		hb1.setWeight(99);
+		
+		BmiIndexer bi1 = new BmiIndexer();
+		hb1.setBmi(bi1.calculateBMI(hb1.getHeight(), hb1.getWeight()));
+		System.out.println(hb1.getBmi());
+		HealthAnalyzer ha1 = new HealthAnalyzer();
+		System.out.println(ha1.analyzeBmi(hb1.getBmi()));
+	}
+
+}
